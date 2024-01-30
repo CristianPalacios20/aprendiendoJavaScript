@@ -1,10 +1,10 @@
-const nombre = document.getElementById("nombre");
+const nombre = document.getElementById('nombre');
 const email = document.getElementById("email");
 const materia = document.getElementById("materia");
 const boton = document.getElementById("enviar");
 
-const h = document.querySelector("hola");
+const h = document.querySelector('button');
 
-h.addEventListener("click",()=>{
+boton.addEventListener('click', ()=>{
     alert('Hola');
 });
