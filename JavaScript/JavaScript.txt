@@ -1,0 +1,309 @@
+var: Nos permiten crear variables mutables que si se puede cambiar.
+let: Nos permiten crear variables mutables que si se puede cambiar.
+const: Nos permite declarar variables inmutables, osea no se puede cambiar.
+
+1. TIPOS DE FOR
+let animales = ["Perro", "gato", "gallina"]
+
+>FOR IN:
+
+#Imprime la posición de los index.
+for(i in animales){
+    document.write(i +"<br>")
+}
+
+
+>FOR OF:
+
+#Imprime el valor de cada index.
+for (i of animales){
+    document.write(i +"<br>")
+}
+
+
+2. FUNCIONES:
+
+>function saludar(nombre){
+    let frase = ("Hola " + nombre + " bienvenido a mi sitio web");
+    document.write(frase);
+    
+}
+saludar("Cristian");
+
+>FUNCION FLECHA:
+
+const saludar = nombre => {
+    let frase = ("Hola " + nombre + " bienvenido a mi sitio web");
+    document.write(frase);
+}
+
+saludar("Stiven");
+
+> let frase = ("Hola " + nombre + " bienvenido a mi sitio web");
+
+const saludar = nombre => document.write(frase);
+
+saludar("Stiven")
+
+4. POO
+
+> #Instanciar: Crear objetos a traves de una clase.
+
+>Objeto:
+
+-Datos (Atributos):
+	1. Nombres.
+	2. Apellidos.
+	3. Correo.
+	4. Contraseña
+
+-Funcionalidad (Metodos):
+	1. Inciar sesion.
+	2. Cerrar sesion
+	3. Editar perfil.
+	4. Cambiar contraseña.
+
+>Pilares en la POO.
+	
+	1. Abstracción: Atributos y métodos.
+	2. Encapsulamiento: Comunicación restringida entre los objetos. 
+	3. Polimorfismo: Dar oreden a los objetos y cada uno actue a su manera
+	4. Herencia: 
+
+>Conceptos básicos:
+	
+	1. Clase.
+	2. Objeto.
+	3. Atributo.
+	4. Metodo.
+	5. Constructor.
+	6. Instanciacion.
+
+4. MÉTODOS DE CADENA.
+
+	>CONCAT(): concatena cadenas
+	>STARTSWITH(): Si una cadena comienza con caracteres de otra cadena, devuelve true, sino false
+	>ENDWITH(): Si una cadena termina con caracteres de otra cadena, devuelve true, sino false
+	>INCLUDES(): Si una cadena se encuentra dentro de otra cadena, devuelve true, sino false
+	>INDEXOF(): Devuelce el indice del primer caracter de la cadena, si no existe, devuelve -1
+	>LASTINDEXOF(): Devuelce el ultimo indice del primer caracter de la cadena, si no existe, devuelve -1
+	>SPLIT(): Divide la cadena como le pidamos.
+	>SUBSTRING(): Muestra la cadena desde, hasta donde se le indique.
+	>TOLOWERCASE(): Convierte todo a minúscula.
+	>TOUPPERCASE: Convierte todo a mayúscula.
+	>TOSTRING(): Convierte el dato a string
+	>TRIM(): Elimina los espacios en blanco
+	>TRIMEND(): Elimina los espacios en blanco del final
+	>TRIMSTART(): Elimina los espacios en blanco del inicio
+
+5. MÉTODOS DE ARRAY:
+
+	>POP(): Elimina el último elemento del array.
+	>SHIFT(): Elimina el primer elemento del array.
+	>PUSH(): Agrega un elemento al array.
+	>REVERSE(): Revierte el orden de los elementos en el array.
+	>UNSHIFT(): Agrega uno o más elementos al inicio del array.
+	>SORT(): Ordena los elementos de forma alfabética o numérico.
+	>SPLICE(): Cambia el contenido de un array eliminando elementos existentes y/o agg nuevos elementos.
+
+
+*ACCESORES.
+
+	>JOIN(): Convierte el array en una cadena de texto.
+	>SLICE(): devuelve una parte del array dentro de un nuevo array empezando por inicio hasta fin (fin no
+			incluido).
+
+*Métodos ya vistos en string:
+
+	>toString():
+	>indexof(): 
+	>lastIndexof(): pregunta por el elemento si es true devuelce la posición, sino -1
+	>includes(): pregunta por el elemento y devuelve true o false:
+
+
+*DE REPETICIÓN.
+
+	>Filter(): Crea un nuevo array con todos los elementos que cumplan la condición.
+			(filter funciona como un for)
+	>forEach(): Ejecuta la funcién indicada una vez por cada elemento del array.
+			(forEach funciona como un for pero no permite poner condiciones)
+
+6.OBJETO MATH
+
+>MÉTODOS:
+
+	>sqrt(): Devuelve la raiz cuadrada positiva de un número.
+	>cbrt(): Devuleve la raíz cúbica de un número.
+	>max(): Devuelve el número mayor.
+	>min(): Devuelve el número menor
+	>ramdom(): Devuelve un número pseudo-aleatorio entre 0 y 1
+	>reound(): Devuelve el valor de un número redondeado al número entero más cercano.
+	>fround(): 
+	>floor(): Devuele el valor mayor entero menor que o igual a un número.(redondea hacia abajo.)
+	>trunc(): Elimina los decimales. No redondea
+
+7. CONSOLE:
+
+*FUNCIONES DE REGISTRO:
+
+>
+
+
+8. MÉTODOS DE SELECIONAR UN ELEMENTO.
+
+	>getElementById(): Selecciona un elemento por id.
+	>getElementByTagName(): Seleciona todos los elementos que coincidan con el
+			el nombre de la etiqueta que coincidan.
+	>querySelector(): Devuelve el primer elemento que coincida con el grupo
+			específico 
+	>querySelectorAll() Devuelve todos los elementos que coincidan
+			con el grupo especificado de selectores. 
+
+9.MÉTODOS PARA DEFINIR, OBTENER Y ELIMINAR ATRIBUTOS. 
+
+	>SetAttribute(): Modifica el valor de un atributo.
+	>getAttribute(): Obtiene el valor de un atributo.
+	>removeAttribute(): Remueve el valor de un atributo.
+
+
+9. ATRIBUTOS GLOBALES.
+
+	>contenditable
+	>dir
+	>hidden
+	>tabindex
+	>title
+
+10. ATRIBUTOS DE INPUTS.
+
+	>className
+	>value
+	>type
+	>accept
+	>form
+	>placeholder
+	>required
+
+11. MÉTODOS DE CLASSLIST
+
+	>add(): Añade una clase.
+	>remove(): remueve una clase.
+	>item(): devuelve la clase del indice específico. 
+	>contains(): verifica si ese elemento posee o no la clase especificada.
+	>replace(): reemplaza la clase por otra.
+	>toggle(): si no tiene la clase especifica, la agrega, si ya la tiuene la elimina.
+
+12. OBTENCION Y MODIFICACIÓN DE ELEMENTOS
+
+	>textContent: devuelve el texto de cualquier nodo.
+	>innerText: devuelve el texto visible de un node elemento
+	>innerHTML: devuelve el contenido html de un elemento
+	>outerHTML: devuelve el código HTML completo del elemento 
+
+13. CREACIÓN DE ELEMENTOS.
+
+	>createElements():
+	>createTextNode():
+	>appendChild():
+	>createDocumentFragment():
+
+14. OBTENCIÓN Y MODIFICACIÓN DE CHILDS(HIJOS)
+
+	>firtsChild
+	>lastChild
+	>firtsElementChild
+	>lastElementChild
+	>childNodes
+	>children
+
+15. WINDOW
+
+	>open()
+	>close()
+	>closed
+	>stop()
+	>alert()
+	>print()
+	>prompt()
+	>confirm()
+
+	>screen
+	>screenLeft
+	>screenTop
+	>scrollx
+	>scrolly
+	>scroll()
+
+> MEDIR ALTO YA ANCHO DE LA PANTALLA.
+
+	> window.screen.height
+	> window.screen.width
+
+> LOCATION
+
+	> window.location.href		(devuelve la url de la página).
+	> window.location.hostname	(devuelve el nombre de dominio del
+					servidor web).
+	> window.location.pathname	(devuelve la ruta y el nombre de archivo
+					de la página).
+	> window.location.protocol	(devuelce el protocolo web utilizado
+					(http: o https:))
+	> window.location.assing	(carga un nuevo documento)
+
+
+15. HERRAMIENTAS DE DESARROLLO DEL NAVEGADOR (CHROME).
+
+*PESTAÑAS ELEMENTS
+	
+	> Filtros yt buscar por palabra clave
+
+
+16. EVENTOS.
+
+	> addEventListener: Agrega un evento
+
+	> stopPropagation(): detiene la ejecucion  de los demas eventos
+				asociados.
+	>
+
+
+
+>EVENTOS DEL MAUSE.
+
+	-click
+	-dblclick_ doble click
+	-mouseover: ocurre cuando el puntero se mueve sobre un elemento
+			o sobre sus hijos.
+	-mouseout: ocurre cuando se mueve el puntero fuera de un elemento
+			o de sus elementos secundarios
+
+
+>EVENTOS DEL TECLADO
+
+
+	-keydown: Ocurre cuando la tecla se deja de presionar.
+	-keypress: Ocurre cuando una tecla se presiona y suelta en un elemento.
+	-onkeyup: Ocurre despues de que los dos eventos anteriores hayan concluido consecutivamente.
+
+
+>EVENTOS DE LA INTERFAZ
+
+	-error: Ocurre cuando suscede un error durante la carga de un archivo multimedia 
+	-load: Ocurre cuando un objeto se ha cargado
+	-beforeunload: Ocurre cuando el documento está a punto de descargarse
+	-unload: Ocurre una vez que se ha descargado una página
+	-resize: Ocurre cuando se cambia el tamaño de la vista del documento
+	-scroll: Ocurre cuando se desplaza la barra de un elemento
+	-select: Ocurre cuando el usuario seleciona algún texto de <input> o <textArea>
+
+
+>FUNCION SALUDAR.
+
+	-setTimeout(): Ejecuta una función a los 2 segundo
+	-setInterval(): Ejecuta una función cada 2 segundo
+	-clearInterval(): detiene la ejecución de una función
+
+
+
+
+
