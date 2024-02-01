@@ -19,8 +19,6 @@ input{
     border-top: 2px solid #48e;
     background: transparent;
     transition: 0.3s;
-    
-
 }
 
 input[type="submit"]{
@@ -53,6 +51,12 @@ form{
     margin: auto;
     background: black;
     padding: 30px;
+}
+
+.resultado{
+    width: 50%;
+    margin: 30px 0px 0px 30px;
+    /* border: 2px solid #fff; */
 }
 
 .rojo{
