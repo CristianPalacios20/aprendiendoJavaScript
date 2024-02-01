@@ -9,10 +9,10 @@ boton.addEventListener('click', (e)=>{
     let error = validarCampos();
     if(error[0]){
         resultado.innerHTLM = error[1];
-        resultado.classList.add('rojo')
+        resultado.classList.add('rojo');
     }else{
         resultado.innerHTML = 'Solicitud enviada';
-        resultado.classList.add('verde')
+        resultado.classList.add('verde');
     }
 });
 
