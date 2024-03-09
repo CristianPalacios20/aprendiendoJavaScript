@@ -35,6 +35,4 @@ const validarCampos = ()=>{
     }
         error[0] = false;
         return error;
-    
-
 }
